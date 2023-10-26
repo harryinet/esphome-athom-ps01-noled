@@ -111,9 +111,10 @@ binary_sensor:
 #    filters:
 #      - delayed_on: 50ms
     device_class: occupancy
-    on_press:
-      then:
-        - light.turn_on: led
+# 2023-10-26 harryinet
+#   on_press:
+#     then:
+#       - light.turn_on: led
     on_release:
       then:
         - light.turn_off: led
